@@ -1,23 +1,39 @@
-# **<center>maltego</center>**
+# MALTEGO
+
+![maltego](https://raw.githubusercontent.com/oda-alexandre/maltego/master/logo-maltego.png) ![docker](https://raw.githubusercontent.com/oda-alexandre/maltego/master/logo-docker.png)
 
 
-**INTRODUCTION**
+## INDEX
 
-*maltego https://www.paterva.com/web7/ via docker*
-
-
-**PREREQUIS**
-
-*Installer docker*
-
-
-**INSTALLATION**
-
-copier/coller dans un terminal :
-
-    docker run -d --name maltego -v /tmp/.X11-unix/:/tmp/.X11-unix/ -p 5900:5900 -e DISPLAY alexandreoda/maltego
+- [Build Docker](#BUILD)
+- [Introduction](#INTRODUCTION)
+- [Prerequis](#PREREQUIS)
+- [Installation](#INSTALLATION)
+- [License](#LICENSE)
 
 
-**LICENSE**
+## BUILD DOCKER
+
+[![maltego docker build](https://img.shields.io/docker/build/alexandreoda/maltego.svg)](https://hub.docker.com/r/alexandreoda/maltego)
+
+
+## INTRODUCTION
+
+Ce repository contient le fichier Dockerfile de [Maltego](https://www.paterva.com/web7/buy/maltego-clients/maltego-ce.php) pour [Docker](https://www.docker.com), mis à jour automatiquement dans le [Docker Hub](https://hub.docker.com/r/alexandreoda/maltego/) public.
+
+
+## PREREQUIS
+
+Installer [Docker](https://www.docker.com)
+
+
+## INSTALLATION
+
+```
+docker run -d --name maltego -v /tmp/.X11-unix/:/tmp/.X11-unix/ -p 5900:5900 -e DISPLAY alexandreoda/maltego
+```
+
+
+## LICENSE
 
 [![GPLv3+](http://gplv3.fsf.org/gplv3-127x51.png)](https://github.com/oda-alexandre/maltego/blob/master/LICENSE)
