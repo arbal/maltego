@@ -30,7 +30,7 @@ Installer [Docker](https://www.docker.com)
 ## INSTALLATION
 
 ```
-docker run -d --name maltego -v /tmp/.X11-unix/:/tmp/.X11-unix/ -p 5900:5900 -e DISPLAY alexandreoda/maltego
+docker run -d --name maltego -v /tmp/.X11-unix/:/tmp/.X11-unix/ --v ${HOME}:/home/maltego p 5900:5900 -e DISPLAY alexandreoda/maltego
 ```
 
 
