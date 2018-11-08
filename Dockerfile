@@ -24,7 +24,13 @@ libnotify4 \
 libnss3 \
 libxtst6
 
-RUN apt-get --purge autoremove -y
+RUN useradd -d /home/maltego -m maltego && \
+passwd -d maltego && \
+adduser maltego sudo
+
+USER maltego
+
+WORKDIR /home/maltego
 
 RUN sudo rm -f /etc/privoxy/config && \
 sudo rm -f /etc/tor/torcc && \
@@ -34,10 +40,6 @@ echo "forward-socks4 / localhost:9050 ." | sudo tee -a /etc/privoxy/config && \
 echo "forward-socks4a / localhost:9050 ." | sudo tee -a /etc/privoxy/config && \
 echo "SOCKSPort localhost:9050" | sudo tee -a /etc/tor/torcc
 
-RUN useradd -d /home/maltego -m maltego && \
-passwd -d maltego && \
-adduser maltego sudo
-
-USER maltego
+RUN sudo apt-get --purge autoremove -y
 
 CMD sudo service tor start && sudo service privoxy start && maltego
