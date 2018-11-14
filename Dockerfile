@@ -4,25 +4,29 @@ MAINTAINER https://oda-alexandre.github.io
 
 RUN apt-get update && apt-get install --no-install-recommends -y \
 ca-certificates \
-apt-transport-https
-
-RUN rm -rf /etc/apt/sources.list && \
-echo "deb https://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list && \
-echo "deb-src https://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
-
-RUN apt-get update && apt-get install --no-install-recommends -y --allow-unauthenticated \
+apt-transport-https \
 sudo \
 tor \
 privoxy \
-maltego \
-firefox-esr \
 xpdf \
-libasound2 \
-libgconf-2-4 \
-libgtk2.0-0 \
-libnotify4 \
-libnss3 \
-libxtst6
+gnupg \
+pgpgpg \
+dirmngr \
+apt-utils \
+xz-utils \
+wget
+
+RUN echo '# Kali linux\ndeb http://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list && \
+wget -q -O - https://archive.kali.org/archive-key.asc  | apt-key add
+
+RUN mkdir -p /usr/share/man/man1
+
+RUN apt-get update && apt-get install --no-install-recommends -y --allow-unauthenticated \
+openjdk-8-jre \
+openjdk-8-jre-headless \
+ca-certificates-java \
+firefox-esr \
+maltego
 
 RUN useradd -d /home/maltego -m maltego && \
 passwd -d maltego && \
