@@ -1,6 +1,6 @@
 # MALTEGO
 
-![maltego](https://raw.githubusercontent.com/oda-alexandre/maltego/master/logo-maltego.png) ![docker](https://raw.githubusercontent.com/oda-alexandre/maltego/master/logo-docker.png)
+![maltego](https://raw.githubusercontent.com/oda-alexandre/maltego/master/img/logo-maltego.png) ![docker](https://raw.githubusercontent.com/oda-alexandre/maltego/master/img/logo-docker.png)
 
 
 ## INDEX
