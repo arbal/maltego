@@ -16,8 +16,9 @@ apt-utils \
 xz-utils \
 wget
 
-RUN echo '# Kali linux\ndeb http://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list && \
-wget -q -O - https://archive.kali.org/archive-key.asc  | apt-key add
+RUN echo 'deb https://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list && \
+echo 'deb-src https://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list && \
+wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add
 
 RUN mkdir -p /usr/share/man/man1
 
