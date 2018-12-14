@@ -4,6 +4,7 @@ MAINTAINER https://oda-alexandre.github.io
 
 RUN apt-get update && apt-get install --no-install-recommends -y \
 ca-certificates \
+locales
 apt-transport-https \
 sudo \
 tor \
@@ -16,6 +17,9 @@ apt-utils \
 xz-utils \
 wget
 
+ENV LANG fr_FR.UTF-8
+RUN echo fr_FR.UTF-8 UTF-8 > /etc/locale.gen && locale-gen
+
 RUN echo 'deb https://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list && \
 echo 'deb-src https://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list && \
 wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add
@@ -26,7 +30,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y --allow-unauthe
 openjdk-8-jre \
 openjdk-8-jre-headless \
 ca-certificates-java \
-firefox-esr \
 maltego
 
 RUN useradd -d /home/maltego -m maltego && \
