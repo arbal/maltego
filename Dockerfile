@@ -16,6 +16,8 @@ pgpgpg \
 dirmngr \
 apt-utils \
 xz-utils \
+firefox-esr \
+firefox-esr-l10n-fr \
 wget
 
 # SELECTION LANGUE FRANCAISE
