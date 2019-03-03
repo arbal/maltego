@@ -1,25 +1,32 @@
 # MALTEGO
 
-![maltego](https://raw.githubusercontent.com/oda-alexandre/maltego/master/img/logo-maltego.png) ![docker](https://raw.githubusercontent.com/oda-alexandre/maltego/master/img/logo-docker.png)
+[![dockeri.co](https://dockeri.co/image/alexandreoda/maltego)](https://hub.docker.com/r/alexandreoda/maltego)
 
 
 ## INDEX
 
-- [Build Docker](#BUILD)
+- [Badges](#BADGES)
 - [Introduction](#INTRODUCTION)
 - [Prerequis](#PREREQUIS)
 - [Installation](#INSTALLATION)
 - [License](#LICENSE)
 
 
-## BUILD DOCKER
+## BADGES
 
-[![maltego docker build](https://img.shields.io/docker/build/alexandreoda/maltego.svg)](https://hub.docker.com/r/alexandreoda/maltego)
+[![version](https://images.microbadger.com/badges/version/alexandreoda/maltego.svg)](https://microbadger.com/images/alexandreoda/maltego)
+[![size](https://images.microbadger.com/badges/image/alexandreoda/maltego.svg)](https://microbadger.com/images/alexandreoda/maltego")
+[![build](https://img.shields.io/docker/build/alexandreoda/maltego.svg)](https://hub.docker.com/r/alexandreoda/maltego)
+[![automated](https://img.shields.io/docker/automated/alexandreoda/maltego.svg)](https://hub.docker.com/r/alexandreoda/maltego)
 
 
 ## INTRODUCTION
 
-Ce repository contient le fichier Dockerfile de [Maltego](https://www.paterva.com/web7/buy/maltego-clients/maltego-ce.php) pour [docker](https://www.docker.com), mis à jour automatiquement dans le [docker hub](https://hub.docker.com/r/alexandreoda/maltego/) public.
+Ce repository contient le fichier Dockerfile de
+
+- [Maltego](https://www.paterva.com/web7/buy/maltego-clients/maltego-ce.php)
+
+Mis à jour automatiquement dans le [docker hub public](https://hub.docker.com/r/alexandreoda/maltego).
 
 
 ## PREREQUIS
