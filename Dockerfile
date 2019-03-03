@@ -6,7 +6,6 @@ MAINTAINER https://oda-alexandre.com
 ENV USER maltego
 ENV LANG fr_FR.UTF-8
 ENV OPENJDK openjdk-8-jre
-ENV VERSION 3.3.1.0
 
 # INSTALLATION DES PREREQUIS
 RUN apt-get update && apt-get install --no-install-recommends -y \
