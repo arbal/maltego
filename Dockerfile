@@ -3,9 +3,9 @@ FROM debian:stretch-slim
 MAINTAINER https://oda-alexandre.com
 
 # VARIABLES
-ENV USER maltego
-ENV LANG fr_FR.UTF-8
-ENV OPENJDK openjdk-8-jre
+ENV USER maltego \
+LANG fr_FR.UTF-8 \
+OPENJDK openjdk-8-jre
 
 # INSTALLATION DES PREREQUIS
 RUN apt-get update && apt-get install --no-install-recommends -y \
