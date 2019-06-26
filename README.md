@@ -1,6 +1,6 @@
 # MALTEGO
 
-[![dockeri.co](https://dockeri.co/image/alexandreoda/maltego)](https://hub.docker.com/r/alexandreoda/maltego)
+<img src="https://ciphertrace.com/wp-content/uploads/2018/06/maltego.png" />
 
 
 ## INDEX
@@ -14,10 +14,7 @@
 
 ## BADGES
 
-[![version](https://images.microbadger.com/badges/version/alexandreoda/maltego.svg)](https://microbadger.com/images/alexandreoda/maltego)
-[![size](https://images.microbadger.com/badges/image/alexandreoda/maltego.svg)](https://microbadger.com/images/alexandreoda/maltego")
-[![build](https://img.shields.io/docker/build/alexandreoda/maltego.svg)](https://hub.docker.com/r/alexandreoda/maltego)
-[![automated](https://img.shields.io/docker/automated/alexandreoda/maltego.svg)](https://hub.docker.com/r/alexandreoda/maltego)
+[![pipeline status](https://gitlab.com/oda-alexandre/maltego/badges/master/pipeline.svg)](https://gitlab.com/oda-alexandre/maltego/commits/master)
 
 
 ## INTRODUCTION
