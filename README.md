@@ -1,6 +1,6 @@
 # MALTEGO
 
-<img src="https://ciphertrace.com/wp-content/uploads/2018/06/maltego.png" />
+<img src="https://ciphertrace.com/wp-content/uploads/2018/06/maltego.png" width="200" height="200"/>
 
 
 ## INDEX
