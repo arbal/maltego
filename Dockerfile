@@ -51,7 +51,7 @@ USER ${USER}
 RUN echo -e '\033[36;1m ******* SELECT WORKING SPACE ******** \033[0m'
 WORKDIR /home/${USER}
 
-RUN echo -e '\033[36;1m ******* CONFIG TOR & PRIVOXY ******** \033[0m'
+RUN echo -e '\033[36;1m ******* CONFIG TOR & PRIVOXY ******** \033[0m' && \
 sudo rm -f /etc/privoxy/config && \
 sudo rm -f /etc/tor/torcc && \
 echo "listen-address localhost:8118" | sudo tee -a /etc/privoxy/config && \
