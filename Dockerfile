@@ -30,7 +30,7 @@ echo ${LANG} > /etc/locale.gen && locale-gen
 RUN echo -e '\033[36;1m ******* ADD contrib non-free IN sources.list ******** \033[0m' && \
 echo 'deb https://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list && \
 echo 'deb-src https://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list && \
-wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add && \
+wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add
 
 RUN echo -e '\033[36;1m ******* INSTALL APP ******** \033[0m' && \
 mkdir -p /usr/share/man/man1 && \
