@@ -10,6 +10,8 @@
   - [INTRODUCTION](#introduction)
   - [PREREQUISITES](#prerequisites)
   - [INSTALL](#install)
+    - [DOCKER RUN](#docker-run)
+    - [DOCKER COMPOSE](#docker-compose)
   - [LICENSE](#license)
 
 ## BADGES
@@ -24,7 +26,7 @@ Docker image of :
 
 Continuous integration on :
 
-- [gitlab](https://gitlab.com/oda-alexandre/maltego/pipelines)
+- [gitlab pipelines](https://gitlab.com/oda-alexandre/maltego/pipelines)
 
 Automatically updated on :
 
@@ -36,7 +38,29 @@ Use [docker](https://www.docker.com)
 
 ## INSTALL
 
-```docker run -d --name maltego -v /tmp/.X11-unix/:/tmp/.X11-unix/ -v ${HOME}:/home/maltego --network host -e DISPLAY alexandreoda/maltego```
+### DOCKER RUN
+
+```docker run -d --name maltego -v /tmp/.X11-unix/:/tmp/.X11-unix/ -v ${HOME}:/home/maltego --network host -e DISPLAY alexandreoda/maltego
+```
+
+### DOCKER COMPOSE
+
+```yml
+version: "3.7"
+
+services:
+  maltego:
+    container_name: maltego
+    image: alexandreoda/maltego
+    restart: no
+    network_mode: host
+    privileged: false
+    environment:
+      - DISPLAY
+    volumes:
+      - "${HOME}:/home/maltego"
+      - "/tmp/.X11-unix/:/tmp/.X11-unix/"
+```
 
 ## LICENSE
 

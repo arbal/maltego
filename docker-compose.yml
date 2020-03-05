@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  maltego:
+    container_name: maltego
+    image: alexandreoda/maltego
+    restart: no
+    network_mode: host
+    privileged: false
+    environment:
+      - DISPLAY
+    volumes:
+      - "${HOME}:/home/maltego"
+      - "/tmp/.X11-unix/:/tmp/.X11-unix/"
