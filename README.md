@@ -41,7 +41,13 @@ Use [docker](https://www.docker.com)
 ### DOCKER RUN
 
 ```\
-docker  run -d --name maltego -v /tmp/.X11-unix/:/tmp/.X11-unix/ -v ${HOME}:/home/maltego --network host -e DISPLAY alexandreoda/maltego
+docker run -d \
+--name maltego \
+--network host \
+-e DISPLAY \
+-v /tmp/.X11-unix/:/tmp/.X11-unix/ \
+-v ${HOME}:/home/maltego \
+alexandreoda/maltego
 ```
 
 ### DOCKER COMPOSE
