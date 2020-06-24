@@ -2,8 +2,6 @@
 
 ![logo](https://assets.gitlab-static.net/uploads/-/system/project/avatar/12904454/vector_logo_grey_small_edge_512_darker.png)
 
-## INDEX
-
 - [MALTEGO](#maltego)
   - [INDEX](#index)
   - [BADGES](#badges)
@@ -36,7 +34,7 @@ Automatically updated on :
 
 Use [docker](https://www.docker.com)
 
-## INSTALL
+## BUILD
 
 ### DOCKER RUN
 
